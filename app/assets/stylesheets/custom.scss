@@ -1,4 +1,4 @@
-$navbar-default-bg: #312312;
+$navbar-default-bg: #594736;
 $light-orange: #ff8c00;
 $navbar-default-color: $light-orange;
 
@@ -15,7 +15,9 @@ $navbar-default-color: $light-orange;
   text-transform: uppercase; 
   letter-spacing: -1px; 
   padding-top: 9px; 
-  font-weight: bold; 
+  font-weight: bold;
+  background-color: #8c1f28;
+  border: 1px solid #8c1f28;
 }
 
 #logo:hover {
