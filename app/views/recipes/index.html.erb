@@ -16,6 +16,19 @@
       <p>
         <span class="quiet"><small><%= time_ago_in_words(recipe.created_at) %> ago</small></span>
       </p>
+      <div class="pull-right">
+        <%= link_to like_recipe_path(recipe, like: true), method: :post do %>
+          <i class="glyphicon glyphicon-thumbs-up"></i>
+          <!--<span>&nbsp;</span>-->
+          <%= recipe.thumbs_up_total %>
+        <% end %>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <%= link_to like_recipe_path(recipe, like: false), method: :post do %>
+          <i class="glyphicon glyphicon-thumbs-down"></i>
+          <!--<span>&nbsp;</span>-->
+          <%= recipe.thumbs_down_total %>
+        <% end %>
+      </div>
     </div>
     
     <div class="col-md-3">
