@@ -14,6 +14,7 @@
 <% @ingredient.recipes.each do |recipe| %>
   <div class="row">
     
+    <br>
     <div class="col-xs-2 col-xs-offset-1">
       <section class="chef_info center">
         <%= link_to gravatar_for(recipe.chef, size: 100), chef_path(recipe.chef) %>
@@ -21,6 +22,7 @@
       </section>
     </div>
     
+    <br>
     <div class="col-xs-6 well">
       <h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
       <p><%= recipe.summary %></p>
